@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using JukeBox.classes;
 //menu
 namespace JukeBox.classes
 {
@@ -25,9 +26,10 @@ namespace JukeBox.classes
         {
             PrintSongs();
             string Io = Console.ReadLine();
+            
             int index = -1;
             bool check = Int32.TryParse(Io, out index);
-            if (!check||index <= 0||index >Choice.Count)
+            if (!check||index <= 0||index <Choice.Count)
             {
                 Console.WriteLine(" Make your selection!!!");
                 return null;
