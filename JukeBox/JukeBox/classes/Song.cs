@@ -6,13 +6,14 @@ namespace JukeBox.classes
 {
     public class Song:Mover
   {
-      
-        public string PlaceNumber { get; set; }
+        public string Direction { get; set; }
 
-        public Song (string title,string artist)
+
+        public Song (string title,string artist,string direction)
     {
             Title = title;
             Artist = artist;
+            Direction = direction;
            ; 
 
 

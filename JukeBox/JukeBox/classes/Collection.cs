@@ -59,17 +59,13 @@ namespace JukeBox.classes
                 }
              );
         }
-        public void Setter()
-        {
-            BuildSongMenu();
-        }
         void  BuildSongMenu()
         {
             SongMenu = new Selector(
                 "Song Menu", new List<SelectorChoices>
                 {
                     new SelectorChoices(ShowSongs,"Welcome to the Collection\nEnter 1 to Open the Song Menu!!!"),
-                    new SelectorChoices(Leave,"Leave the Collection")
+                    new SelectorChoices(Leave,"Enter 2 to Leave the Collection")
                 }
              );
         }
@@ -91,7 +87,8 @@ namespace JukeBox.classes
             
             foreach (Song song in Songs)
             {
-                Console.WriteLine($" {song.Title} ");
+
+                Console.WriteLine($" {song.Title} By{song.Artist} \n{song.Direction}");
             }
         }
         public void MainBuild()
@@ -114,10 +111,14 @@ namespace JukeBox.classes
 
         private void Leave()
         {
-            Console.WriteLine("You've left the collection!!");
+            Console.WriteLine("You've closed the song list");
             Check = false;
 
         }
 
+        public void Setter()
+        {
+            BuildSongMenu();
+        }
     }
 }
