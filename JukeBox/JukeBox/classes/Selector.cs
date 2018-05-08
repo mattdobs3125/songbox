@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using JukeBox.classes;
-//menu
+
 namespace JukeBox.classes
 {
     class Selector
@@ -16,20 +16,21 @@ namespace JukeBox.classes
         }
         void PrintSongs()
         {
-            int count = 1;
             foreach (var choice  in Choice)
             {
-                Console.WriteLine($"{count++} {choice.Attributes}");
+                Console.WriteLine($" {choice.Attributes}");
             }
         }
         public Action ChoiceSelection()
         {
+            
             PrintSongs();
+           
             string Io = Console.ReadLine();
             
             int index = -1;
             bool check = Int32.TryParse(Io, out index);
-            if (!check||index <= 0||index <Choice.Count)
+            if (!check||index <= 0||index >Choice.Count)
             {
                 Console.WriteLine(" Make your selection!!!");
                 return null;

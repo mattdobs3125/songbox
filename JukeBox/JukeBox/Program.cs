@@ -1,6 +1,6 @@
 ﻿using JukeBox.classes;
 using System;
-using System;
+
 namespace JukeBox
 {
     class Program
@@ -11,16 +11,16 @@ namespace JukeBox
 
 
             Collection Songs = new Collection("h","cpp");
-            Song kimd = new Song("Stars", "So Bright","");
-            Song sis = new Song("Stars", "So Bright","");
-            Song il = new Song("Stars", "So Bright","");
-            Song ste = new Song("Stars", "So Bright","");
+            Song fus = new Song("Beeps in hollywood", "Beeples");
+            Song ro = new Song("Beep upTown", "Beeps in Paris");
+            Song da = new Song("Faster than beep", "Lost B33p's");
+            
 
 
-            Songs.AddSong(kimd);
-            Songs.AddSong(sis);
-            Songs.AddSong(il);
-            Songs.AddSong(ste);
+            Songs.AddSong(fus);
+            Songs.AddSong(ro);
+            Songs.AddSong(da);
+           
 
             Songs.Setter();
 

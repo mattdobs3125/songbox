@@ -10,14 +10,9 @@ namespace JukeBox.ads
         public string Title { get; set; }
         public string Artist  { get; set; }
         
-        public DateTime SongStart { get; set; }
-        public DateTime SongLength { get; set; }
+        
 
-        public void Time()
-        {
-            SongStart = DateTime.Now;
-            SongLength = DateTime.Now.AddDays(8);
-        }
+        
 
 
 

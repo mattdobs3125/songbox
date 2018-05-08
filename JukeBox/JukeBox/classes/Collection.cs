@@ -41,7 +41,7 @@ namespace JukeBox.classes
             Here = true;
             while (Here)
             {
-                Action choice = Main.ChoiceSelection();
+                Action choice = SongMenu.ChoiceSelection();
                 if (choice != null)
                 {
                     choice.Invoke();
@@ -54,8 +54,8 @@ namespace JukeBox.classes
             return new Selector (
                 "Main Menu!!",new List<SelectorChoices>
                 {
-                    new SelectorChoices(SongSelection,"Song Choices"),
-                    new SelectorChoices(ExitJukeBox,"Leave lukeBox")
+                    new SelectorChoices(SongSelection,"Welcome to the JukeBox Collection!!! \nEnter 1 to Enter the Collection"),
+                    new SelectorChoices(ExitJukeBox,"Enter 2 to Leave the JukeBox")
                 }
              );
         }
@@ -68,8 +68,8 @@ namespace JukeBox.classes
             SongMenu = new Selector(
                 "Song Menu", new List<SelectorChoices>
                 {
-                    new SelectorChoices(ShowSongs,"Song List!"),
-                    new SelectorChoices(Leave,"Leave the song")
+                    new SelectorChoices(ShowSongs,"Welcome to the Collection\nEnter 1 to Open the Song Menu!!!"),
+                    new SelectorChoices(Leave,"Leave the Collection")
                 }
              );
         }
@@ -88,10 +88,10 @@ namespace JukeBox.classes
         public void ShowSongs ()
         {
             Console.Clear();
-            int counter = 1;
+            
             foreach (Song song in Songs)
             {
-                Console.WriteLine($"Number {counter++} {song.Title} ");
+                Console.WriteLine($" {song.Title} ");
             }
         }
         public void MainBuild()

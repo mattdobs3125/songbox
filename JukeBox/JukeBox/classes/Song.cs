@@ -9,11 +9,11 @@ namespace JukeBox.classes
       
         public string PlaceNumber { get; set; }
 
-        public Song (string title,string artist,string attribute)
+        public Song (string title,string artist)
     {
             Title = title;
             Artist = artist;
-            attribute = artist + title; 
+           ; 
 
 
 
