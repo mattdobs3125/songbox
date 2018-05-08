@@ -54,8 +54,8 @@ namespace JukeBox.classes
             return new Selector (
                 "Main Menu!!",new List<SelectorChoices>
                 {
-                    new SelectorChoices(SongSelection,"Welcome to the JukeBox Collection!!! \nEnter 1 to Enter the Collection"),
-                    new SelectorChoices(ExitJukeBox,"Enter 2 to Leave the JukeBox")
+                    new SelectorChoices(SongSelection," Welcome to the JukeBox Collection!!! \n Enter 1 to Enter the Collection"),
+                    new SelectorChoices(ExitJukeBox," Enter 2 to Leave the JukeBox")
                 }
              );
         }
@@ -64,8 +64,9 @@ namespace JukeBox.classes
             SongMenu = new Selector(
                 "Song Menu", new List<SelectorChoices>
                 {
-                    new SelectorChoices(ShowSongs,"Welcome to the Collection\nEnter 1 to Open the Song Menu!!!"),
-                    new SelectorChoices(Leave,"Enter 2 to Leave the Collection")
+                    new SelectorChoices(ShowSongs," Welcome to the Collection\n Enter 1 to Open the Song Menu!!!"),
+                    new SelectorChoices(Leave," Enter 2 to Close the Song List"),
+                    new SelectorChoices(ExitJukeBox," Enter 3 to exit the program")
                 }
              );
         }

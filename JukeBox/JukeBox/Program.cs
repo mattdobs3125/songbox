@@ -11,9 +11,9 @@ namespace JukeBox
 
 
             Collection Songs = new Collection("h","cpp");
-            Song Fus = new Song("Beeps in hollywood", "Beeples","Enter 3 to play this song");
-            Song Ro = new Song("Beep upTown", "Beeps in Paris","Enter 4 to play this song");
-            Song Dah = new Song("Faster than beep", "Lost B33p's","Enter 5 to play this song");
+            Song Fus = new Song(" Beeps in hollywood", " The Beeples","Enter 4 to play this song");
+            Song Ro = new Song(" Beep upTown", " Beeps in Paris","Enter 5 to play this song");
+            Song Dah = new Song(" Faster than beep", " Lost B33p's","Enter 6 to play this song");
             
 
 

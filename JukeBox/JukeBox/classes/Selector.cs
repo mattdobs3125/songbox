@@ -33,9 +33,9 @@ namespace JukeBox.classes
             bool check = Int32.TryParse(Io, out index);
             if (!check||index <= 0||index >Choice.Count)
             {
-                Console.WriteLine(" Make your selection!!!");
+                Console.WriteLine(" Playing!!!");
                 
-                if (index == 3)
+                if (index == 4)
                 {
                     index = 1;
                     
@@ -61,7 +61,7 @@ namespace JukeBox.classes
                     Console.Beep(1056, 250);
                     
                 }
-                else if (index == 4)
+                else if (index == 5)
                 {
                     index = 1;
                     Console.Beep(1188, 500);
@@ -83,7 +83,7 @@ namespace JukeBox.classes
                     Console.Beep(1320, 500);
                     Console.Beep(1188, 250);
                 }
-                else if (index == 5)
+                else if (index == 6)
                 {
                     index = 1;
                     Console.Beep(658, 125);
